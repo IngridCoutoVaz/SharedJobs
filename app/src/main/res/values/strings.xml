@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Shared Jobs</string>
+    <string-array name="formacao">
+        <item>Fundamental e médio</item>
+        <item>Graduação e especialização</item>
+        <item>Mestrado e Doutorado</item>
+    </string-array>
+</resources>
