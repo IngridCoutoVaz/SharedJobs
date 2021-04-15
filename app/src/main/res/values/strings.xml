@@ -3,6 +3,6 @@
     <string-array name="formacao">
         <item>Fundamental e médio</item>
         <item>Graduação e especialização</item>
-        <item>Mestrado e Doutorado</item>
+        <item>Mestrado e doutorado</item>
     </string-array>
 </resources>
