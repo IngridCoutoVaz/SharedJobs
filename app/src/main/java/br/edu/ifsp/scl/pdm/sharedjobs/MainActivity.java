@@ -57,7 +57,7 @@ public class MainActivity extends AppCompatActivity {
         formacaoSp.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
-                if (((TextView) view).getText().equals("Fundamental e Médio")){
+                if (((TextView) view).getText().equals("Fundamental e médio")){
                     anoFormaturaEt.setVisibility(View.VISIBLE);
                     anoConclusaoEt.setVisibility(View.GONE);
                     instituiçãoEt.setVisibility(View.GONE);
@@ -67,7 +67,7 @@ public class MainActivity extends AppCompatActivity {
                     orientadorEt.setVisibility(View.GONE);
                     }
 
-                else if (((TextView) view).getText().equals("Graduaçãoe  especialização")){
+                else if (((TextView) view).getText().equals("Graduação e especialização")){
                     anoFormaturaEt.setVisibility(View.GONE);
                     anoConclusaoEt.setVisibility(View.VISIBLE);
                     instituiçãoEt.setVisibility(View.VISIBLE);
@@ -139,6 +139,8 @@ public class MainActivity extends AppCompatActivity {
         tituloEt.setText("");
         orientadorEt.setText("");
         vagasEt.setText("");
+        celularCheckBox.setChecked(false);
+        celularEt.setVisibility(View.GONE);
     }
 
     private void saveForm(){
