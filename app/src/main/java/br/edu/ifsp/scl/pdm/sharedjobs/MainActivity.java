@@ -37,8 +37,7 @@ public class MainActivity extends AppCompatActivity {
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
                 String formacao = ((TextView) view).getText().toString();
                 switch (formacao) {
-                    case "Fundamental":
-                    case "Médio":
+                    case "Fundamental e médio":
                         activityMainBinding.tituloMonografiaEt.setVisibility(View.GONE);
                         activityMainBinding.orientadorEt.setVisibility(View.GONE);
                         activityMainBinding.instituicaoEt.setVisibility(View.GONE);
@@ -46,16 +45,14 @@ public class MainActivity extends AppCompatActivity {
                         activityMainBinding.orientadorEt.setText("");
                         activityMainBinding.instituicaoEt.setText("");
                         break;
-                    case "Graduação":
-                    case "Especialização":
+                    case "Graduação e especialização":
                         activityMainBinding.tituloMonografiaEt.setVisibility(View.GONE);
                         activityMainBinding.orientadorEt.setVisibility(View.GONE);
                         activityMainBinding.instituicaoEt.setVisibility(View.VISIBLE);
                         activityMainBinding.tituloMonografiaEt.setText("");
                         activityMainBinding.orientadorEt.setText("");
                         break;
-                    case "Mestrado":
-                    case "Doutorado":
+                    case "Mestrado e doutorado":
                         activityMainBinding.tituloMonografiaEt.setVisibility(View.VISIBLE);
                         activityMainBinding.orientadorEt.setVisibility(View.VISIBLE);
                         activityMainBinding.instituicaoEt.setVisibility(View.VISIBLE);
@@ -67,7 +64,6 @@ public class MainActivity extends AppCompatActivity {
 
             @Override
             public void onNothingSelected(AdapterView<?> parent) {
-                // Não é necessário
             }
         });
     }
